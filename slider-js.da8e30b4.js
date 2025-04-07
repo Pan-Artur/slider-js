@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",()=>{let e=document.querySelectorAll(".slide"),t=document.querySelectorAll(".dot"),c=document.querySelector(".prev"),d=document.querySelector(".next"),l=0,a=c=>{e.forEach(e=>e.classList.remove("active")),t.forEach(e=>e.classList.remove("active")),l=(c+e.length)%e.length,e[l].classList.add("active"),t[l].classList.add("active")};d.addEventListener("click",()=>{a(l+1)}),c.addEventListener("click",()=>{a(l-1)}),t.forEach((e,t)=>{e.addEventListener("click",()=>a(t))})});
+//# sourceMappingURL=slider-js.da8e30b4.js.map
